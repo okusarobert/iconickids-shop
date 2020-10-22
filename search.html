@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/custom.css">
+  <title>Kids Wears online shop - microverse capstone HTML/CSS project</title>
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav background-black py-1 text-gray">
+    <div class="nav-container">
+      <ul class="nav-left mb-0 text-uppercase">
+        <li class="nav-brand"><a class="d-flex justify-content-between align-items-center" href="./index.html"><span class="badge badge-danger m-2 p-2"><i class="far fa-baby"></i></span> <span>ICONIC KIDS</span> </a></li>
+        <li class="active mr-2 mr-sm-4 ml-2"><a href="./index.html"><i class="fas fa-home mr-1"></i> Home</a></li>
+        <li class="mr-2 mr-sm-4"><a href="#"><i class="fas fa-th-list mr-1"></i> Categories</a></li>
+        <li class="mr-sm-4 d-none d-sm-block"><a href="./search.html"><i class="fas fa-search mr-1"></i> Search</a></li>
+       
+      </ul>
+
+      <ul class="nav-account d-flex align-items-center mb-0">
+        <li class="nav-account-item mr-3">
+          <a href="" class="nav-account-nottifiactions h6"><i class="fas fa-envelope"></i></a>
+        </li>
+        <li class="nav-account-avatar mr-2">
+          <a href=""><i class="fa fa-user-circle fa-2x"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Intro -->
+  <section class="intro text-center py-5 px-2">
+    <div class="intro-details text-white mb-4 mb-md-5 pt-md-4 mx-auto">
+      <h1 class="intro-title text-uppercase font-weight-bold mb-0">Iconic Kids</h1>
+      <p class="intro-subtitle font-gotham-light">Buy and sell kids wears online</p>
+    </div>
+
+    <form action="./search.html" class="intro-search-form font-helvetica px-4" method="get">
+      <select name="category" id="category" class="d-block w-100 py-2 px-3 text-gray mb-1 mb-md-0">
+        <option value="stained-glass">All categories</option>
+        <option value="stained-glass">Jackets</option>
+        <option value="jewelry">Shoes</option>
+        <option value="headbands">Toys</option>
+        <option value="magnets">Sandals</option>
+        <option value="bird-houses">Others</option>
+      </select>
+
+      <input type="text" placeholder="What are you searching?" class="d-block w-100  py-2 px-3  text-gray mb-1 mb-md-0">
+
+      <input type="text" placeholder="Country/Region" class="d-block w-100  py-2 px-3  text-gray mb-1 mb-md-0">
+
+      <button class="intro-search-button background-black text-gray py-2 px-4 ml-md-2 rounded"
+        type="submit">Search</button>
+    </form>
+  </section>
+
+ 
+  
+
+  <!-- Main content -->
+  <div class="main-container">
+    <div class="search-grid-container mx-auto d-grid pt-2 py-md-0 px-0">
+
+      <!-- Filters -->
+      <aside class="search-filters font-gotham-light px-2 py-3 px-sm-5 px-md-3 text-black">
+        <form action="./search.html" class="search-filters-form">
+          <div class="search-filter-container">
+            <div class="search-filter text-gray">
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="new" value="new">
+                <label for="new" class="form-check-label">New</label>
+              </div>
+
+              <div class="form-check form-check-inline">
+                <input type="checkbox" class="form-check-input" id="used" value="used">
+                <label for="used" class="form-check-label">Used</label>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="search-filter-grid-container d-grid">
+
+            <div class="search-filter-container">
+              <h3 class="search-filter-title font-helvetica mt-2 border-bottom pb-1 mb-2">Category</h3>
+
+              <div class="search-filter text-gray">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="new2" value="new">
+                  <label for="new" class="form-check-label">New</label>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="used2" value="used">
+                  <label for="used" class="form-check-label">Used</label>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="ideas1" value="ideas">
+                  <label for="ideas1" class="form-check-label">Company</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-filter-container">
+              <h3 class="search-filter-title font-helvetica mt-2 border-bottom pb-1 mb-2">Category</h3>
+
+              <div class="search-filter text-gray">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="new3" value="new">
+                  <label for="new" class="form-check-label">New</label>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="used3" value="used">
+                  <label for="used" class="form-check-label">Used</label>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="ideas2" value="ideas">
+                  <label for="custom" class="form-check-label">Custom <span class="form-check form-check-inline"><input
+                        type="text" class="form-input custom-input text-center rounded ml-1" id="custom"
+                        placeholder="5"></span>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-filter-container">
+              <h3 class="search-filter-title font-helvetica mt-2 border-bottom pb-1 mb-2">Category</h3>
+
+              <div class="search-filter text-gray">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="new4" value="new">
+                  <label for="new" class="form-check-label">New</label>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="used4" value="used">
+                  <label for="used" class="form-check-label">Used</label>
+                </div>
+
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="ideas3" value="ideas">
+                  <label for="ideas3" class="form-check-label">Company</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </aside>
+
+      <!-- Main articles -->
+      <main class="search-articles px-sm-5 px-md-0 border">
+        <h3 class="search-articles-title text-gray font-helvetica-light px-2 pb-1 pl-md-3 mt-md-3">We found <b>87</b>
+          results for your search. Please check below:
+        </h3>
+
+        <div class="search-articles-container">
+          <article class="search-article text-gray p-2 p-sm-0 p-md-3 d-md-flex mb-2">
+            <div class="search-article-image position-relative">
+              <img src="./images/clothes/clothes4.jpg" alt="Baby girl tops">
+              <div class="image-buttons position-absolute d-flex">
+                <button type="button" class="search-article-image-button text-red background-black px-3 py-1"><i
+                    class="fas fa-angle-left"></i></button>
+                <button type="button" class="search-article-image-button text-red background-black px-3 py-1"><i
+                    class="fas fa-angle-right"></i></button>
+              </div>
+            </div>
+
+            <div class="search-article-details font-helvetica p-sm-3">
+              <h3 class="search-article-title mb-1 mt-4 text-black">Baby girl tops</h3>
+
+              <p class="search-article-tag text-red">In Stock</p>
+
+              <p class="search-article-description font-helvetica-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est corporis facere, quos aliquam totam error corrupti sunt laborum praesentium. Eaque quia tempore, dignissimos fugit consequuntur ipsam doloribus expedita tenetur reiciendis.</p>
+
+              <p class="search-article-location text-black mb-0">Location: <span class="text-gray"> Kampala, Uganda</span></p>
+
+              <div class="search-article-footer d-md-flex justify-content-between align-items-center mt-md-2">
+                <time datetime="2008-02-14 20:00" class="search-article-date mb-3 d-block">22 October, 2020</time>
+
+                <ul class="search-article-buttons d-flex justify-content-center">
+                  <li class="mr-2"><button type="button" class="search-article-button button-primary">Contact Seller</button>
+                  </li>
+                  <li><button type="button" class="search-article-button button-primary">
+                      22$</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="search-article text-gray p-2 p-sm-0 p-md-3 d-md-flex mb-2">
+            <div class="search-article-image position-relative">
+              <img src="./images/shoes/shoes1.jpg" alt="Cool kids shoes">
+              <div class="image-buttons position-absolute d-flex">
+                <button type="button" class="search-article-image-button text-red background-black px-3 py-1"><i
+                    class="fas fa-angle-left"></i></button>
+                <button type="button" class="search-article-image-button text-red background-black px-3 py-1"><i
+                    class="fas fa-angle-right"></i></button>
+              </div>
+            </div>
+
+            <div class="search-article-details font-helvetica p-sm-3">
+              <h3 class="search-article-title mb-1 mt-4 text-black">Cool kids shoes</h3>
+
+              <p class="search-article-tag text-red">New Arrivals</p>
+
+              <p class="search-article-description font-helvetica-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nemo obcaecati earum explicabo temporibus asperiores quisquam porro aperiam consequatur, eveniet unde perferendis tenetur! Nisi aliquam accusamus inventore deserunt facere tempore!</p>
+
+              <p class="search-article-location text-black mb-0">Location: <span class="text-gray">Lagos, Nigeria</span></p>
+
+              <div class="search-article-footer d-md-flex justify-content-between align-items-center mt-md-2">
+                <time datetime="2008-02-14 20:00" class="search-article-date mb-3 d-block">10 Jul, 2020</time>
+
+                <ul class="search-article-buttons d-flex justify-content-center">
+                  <li class="mr-2"><button type="button" class="search-article-button button-primary">Contact Seller</button>
+                  </li>
+                  <li><button type="button" class="search-article-button button-primary">
+                      40$</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="search-article text-gray p-2 p-sm-0 p-md-3 d-md-flex mb-2">
+            <div class="search-article-image position-relative">
+              <img src="./images/clothes/clothes2.jpg" alt="Tailor Made Kids wea">
+              <div class="image-buttons position-absolute d-flex">
+                <button type="button" class="search-article-image-button text-red background-black px-3 py-1"><i
+                    class="fas fa-angle-left"></i></button>
+                <button type="button" class="search-article-image-button text-red background-black px-3 py-1"><i
+                    class="fas fa-angle-right"></i></button>
+              </div>
+            </div>
+
+            <div class="search-article-details font-helvetica p-sm-3">
+              <h3 class="search-article-title mb-1 mt-4 text-black">Tailor Made Kids wear</h3>
+
+              <p class="search-article-tag text-red">Custom Order</p>
+
+              <p class="search-article-description font-helvetica-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eveniet consectetur magni, expedita laboriosam distinctio amet officiis magnam itaque numquam asperiores rem nostrum cumque sequi ad, voluptatem corrupti unde repellendus.</p>
+
+              <p class="search-article-location text-black mb-0">Location: <span class="text-gray">Lagos, Nigeria</span></p>
+
+              <div class="search-article-footer d-md-flex justify-content-between align-items-center mt-md-2">
+                <time datetime="2008-02-14 20:00" class="search-article-date mb-3 d-block">1 Jul, 2020</time>
+
+                <ul class="search-article-buttons d-flex justify-content-center">
+                  <li class="mr-2"><button type="button" class="search-article-button button-primary">Contact Seller</button>
+                  </li>
+                  <li><button type="button" class="search-article-button button-primary">
+                      20$</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="search-article text-gray p-2 p-sm-0 p-md-3 d-md-flex mb-0">
+            <div class="search-article-image position-relative">
+              <img src="./images/shoes/shoes5.jpg" alt="Nice Baby Shoes">
+              <div class="image-buttons position-absolute d-flex">
+                <button type="button" class="search-article-image-button text-red background-black px-3 py-1"><i
+                    class="fas fa-angle-left"></i></button>
+                <button type="button" class="search-article-image-button text-red background-black px-3 py-1"><i
+                    class="fas fa-angle-right"></i></button>
+              </div>
+            </div>
+
+            <div class="search-article-details font-helvetica p-sm-3">
+              <h3 class="search-article-title mb-1 mt-4 text-black">Nice Baby Shoes</h3>
+
+              <p class="search-article-tag text-red">Latest</p>
+
+              <p class="search-article-description font-helvetica-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo nobis laboriosam numquam omnis officiis eveniet amet aliquid possimus debitis, inventore delectus fugit non in quisquam fuga exercitationem. Sed, eaque fugiat?</p>
+
+              <p class="search-article-location text-black mb-0">Location: <span class="text-gray">London,
+                  England</span></p>
+
+              <div class="search-article-footer d-md-flex justify-content-between align-items-center mt-md-2">
+                <time datetime="2008-02-14 20:00" class="search-article-date mb-3 d-block">25 May, 2020</time>
+
+                <ul class="search-article-buttons d-flex justify-content-center">
+                  <li class="mr-2"><button type="button" class="search-article-button button-primary">Contact Seller</button>
+                  </li>
+                  <li><button type="button" class="search-article-button button-primary">
+                      32$</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+
+        <nav class="d-flex justify-content-end mt-4">
+          <ul class="pagination pagination-sm">
+            <li class="page-item " aria-current="page">
+              <span class="page-link bg-danger text-white">
+                1
+                <span class="sr-only">(current)</span>
+              </span>
+            </li>
+            <li class="page-item mx-1"><a class="page-link text-red" href="#">2</a></li>
+            <li class="page-item mx-1"><a class="page-link text-red" href="#">3</a></li>
+            <li class="page-item mx-1"><a class="page-link text-red" href="#">4</a></li>
+            <li class="page-item mx-1"><a class="page-link text-red" href="#">...</a></li>
+            <li class="page-item"><a class="page-link text-red" href="#">7</a></li>
+          </ul>
+        </nav>
+
+      </main>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer text-gray p-3">
+
+    <div class="footer-main d-grid mx-auto">
+      <div class="footer-company">
+        <div class="my-4 py-1 px-2 rounded">
+          <a href="#"><span class="badge badge-dark m-2 p-2"><i class="far fa-baby"></i></span> <span>ICONIC KIDS</span> </a>
+        </div>
+        <p class="footer-company-description font-gotham-light mt-3">Sed ut perspiciatis unde omnis iste natus
+          error sit
+          voluptatem accusantium
+          doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+          beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+          sed quia consequuntur magni dolores.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-links-title text-uppercase text-red pb-2 text-uppercase">Categories</h4>
+
+        <ul class="footer-links-group footer-group-double d-grid font-gotham-light">
+          <li><a href="#">Shoes and Sandals</a></li>
+          <li><a href="#">Clothes</a></li>
+          <li><a href="#">Toys</a></li>
+          <li><a href="#">Others</a></li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h4 class="footer-links-title text-uppercase text-red pb-2 text-uppercase">Credits</h4>
+
+        <ul class="footer-links-group footer-group-single font-gotham-light d-grid">
+         
+          <li><a href="https://www.microverse.org/">Microverse</a></li>
+          <li><a href="https://www.behance.net/M_Awad">Mohammed Awad</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-settings">
+        <div class="footer-setting mb-2">
+          <p><span class="footer-setting-label text-red mr-2 text-uppercase"> Language</span>
+            <a class="footer-setting-select px-3 py-2 text-gray border">
+              English
+            </a>
+          </p>
+        </div>
+
+        <div class="footer-setting mb-2">
+          <p><span class="footer-setting-label text-red mr-2 text-uppercase"> Location</span>
+            <a class="footer-setting-select px-3 py-2 text-gray border">
+              Uganda
+            </a>
+          </p>
+        </div>
+
+        <div class="footer-setting mb-2">
+          <p><span class="footer-setting-label text-red mr-2 text-uppercase"> Currency</span>
+            <a class="footer-setting-select px-3 py-2 text-gray border">
+              US Dollars
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-copyright d-md-flex justify-content-between align-items-center mx-auto">
+      <div class="footer-copyright-left">
+        <p class="font-helvetica-light text-center my-4">
+          This website is made with <i class="fas fa-heart text-dark"></i>
+          <br class="d-md-none">
+          by <a href="https://github.com/okusarobert" class="font-weight-bold">Okusa John Robert</a>
+          <br class="d-md-none">
+          <span>&copy; Copyright 2020 </span>
+        </p>
+      </div>
+
+      <ul class="footer-copyright-right d-flex align-items-center justify-content-center my-3 h3">
+        <li class="mr-3"><a href="#"><i class="fab fa-facebook"></i></a></li>
+        <li class="mr-3"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li class="mr-3"><a href="#"><i class="fab fa-twitter"></i></a></li>
+        <li class="mr-3"><a href="#"><i class="fab fa-google"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
