@@ -1,26 +1,26 @@
 @font-face {
   font-family: gotham-bold;
-  src: url(/fonts/GothamBold.ttf);
+  src: url(../fonts/GothamBold.ttf);
 }
 
 @font-face {
   font-family: gotham-light;
-  src: url(/fonts/GothamRoundedLight_21020.ttf);
+  src: url(../fonts/GothamRoundedLight_21020.ttf);
 }
 
 @font-face {
   font-family: helvetica-light;
-  src: url(/fonts/HelveticaNeue-Light.ttf);
+  src: url(../fonts/HelveticaNeue-Light.ttf);
 }
 
 @font-face {
   font-family: helvetica-medium;
-  src: url(/fonts/HelveticaNeue-Medium.ttf);
+  src: url(../fonts/HelveticaNeue-Medium.ttf);
 }
 
 @font-face {
   font-family: helvetica-bold;
-  src: url(/fonts/HelveticaNeue-Bold.ttf);
+  src: url(../fonts/HelveticaNeue-Bold.ttf);
 }
 
 /* Reset */
@@ -162,7 +162,7 @@ img {
 /* Intro */
 .intro {
   background: #d35266;
-  background: linear-gradient(270deg, rgba(211, 82, 102, 0.4037990196) 0%, rgba(211, 82, 102, 0.8043592437) 25%, rgba(211, 82, 102, 0.8015581232) 75%, rgba(211, 82, 102, 0.6334908964) 92%), url("/images/clothes/clothes3.jpg");
+  background: linear-gradient(270deg, rgba(211, 82, 102, 0.4037990196) 0%, rgba(211, 82, 102, 0.8043592437) 25%, rgba(211, 82, 102, 0.8015581232) 75%, rgba(211, 82, 102, 0.6334908964) 92%), url("../images/clothes/clothes3.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
